@@ -32,7 +32,7 @@
 
 ## News
 
-- **[2026-09-29]** The UltraMatch paper has been submitted to arXiv. The public paper link and arXiv citation will be added after announcement.
+**[2026-09-29]** The UltraMatch paper has been submitted to arXiv. The public paper link and arXiv citation will be added after announcement.
 
 ## Overview
 
