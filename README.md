@@ -33,7 +33,6 @@
 ## News
 
 - **2026-09-29:** The UltraMatch paper has been submitted to arXiv. The public paper link and arXiv citation will be added after announcement.
-- **2026-09-29:** The project overview and main experimental results are available below. Code and pretrained weights have not yet been released.
 
 ## Overview
 
@@ -49,7 +48,7 @@ The framework combines:
 - **Sparse global Dual-Softmax:** preserve global competition across the routed candidates while avoiding the full dense matching matrix.
 - **Efficient feature extraction and refinement:** use structural reparameterization and a compact fine matching head with shared parameters.
 
-In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightGlue** and **4.35x faster than ELoFTR**, with **0.44 GiB** peak inference memory on MegaDepth-1500. On ETH3D, it supports image pairs at **6048 x 4032** resolution on a single RTX 3090. The routing strategy also transfers to existing semi-dense matchers.
+In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightGlue** and **4.35x faster than ELoFTR**, with **0.44 GiB** peak inference memory on MegaDepth-1500. On ETH3D, it supports image pairs at **6048 x 4032** resolution on a single RTX 3090. The routing strategy can be readily **integrated into other semi-dense matchers**.
 
 ## Results
 
