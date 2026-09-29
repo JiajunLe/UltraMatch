@@ -70,7 +70,6 @@ In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightG
 
 ### Transferability of Transport Path Routing
 
-Transport Path Routing can be readily integrated into existing semi-dense matchers, achieving up to **29.02× faster coarse matching**, **2.01× end-to-end speedup**, and **92.7% lower peak GPU memory** across the evaluated methods. The results below reproduce **Table 3** of the paper. Original and routed variants are trained from scratch using the corresponding official training protocols.
 
 AUC, runtime, and memory are shown as **Original / Routing**.
 
