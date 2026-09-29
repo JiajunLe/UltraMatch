@@ -34,7 +34,7 @@
 
 - **2026-09-29:** The UltraMatch paper has been submitted to arXiv. The public paper link and arXiv citation will be added after announcement.
 
-## Overview
+# Overview
 
 **UltraMatch is an efficient, scalable semi-dense image matcher that routes computation to a small set of promising matching paths.** Instead of constructing a full token-to-token matching matrix, a lightweight **Transport Path Router** ranks candidate target blocks for each source block and retains only a small subset. Matching then runs over the selected paths.
 
@@ -50,9 +50,9 @@ The framework combines:
 
 In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightGlue** and **4.35x faster than ELoFTR**, with **0.44 GiB** peak inference memory on MegaDepth-1500. On ETH3D, it supports image pairs at **6048 x 4032** resolution on a single RTX 3090. The routing strategy can be readily **integrated into other semi-dense matchers**.
 
-## Results
+# Results
 
-### Accuracy and efficiency
+## Accuracy and efficiency
 
 <p align="center">
   <img src="assets/efficiency.png" alt="Latency versus peak GPU memory on MegaDepth-1500; bubble size indicates relative pose AUC at 5 degrees." width="620">
@@ -79,7 +79,7 @@ Bold highlights our method. UltraMatch achieves the highest ScanNet AUCs among t
 
 **Measurement details.** Table 1 uses each method's reported inference settings. UltraMatch's 32.26 ms result uses selective BF16. Under full FP32, it achieves the same MegaDepth AUC@5 of 57.4, with **37.85 ms** latency and **0.57 GiB** peak memory. The paper's Appendix F.3 and Table 10 provide the controlled efficiency comparison and inference configurations.
 
-### High-resolution scalability
+## High-resolution scalability
 
 <p align="center">
   <img src="assets/inference-runtime.png" alt="Inference runtime as input resolution increases on ETH3D." width="48%">
@@ -88,7 +88,7 @@ Bold highlights our method. UltraMatch achieves the highest ScanNet AUCs among t
 
 On ETH3D, UltraMatch scales to **6K (6048 x 4032)** with **7.82 GiB** peak inference memory on a single RTX 3090. At **1824 x 1216**, it takes **36.43 ms** and **0.63 GiB**, compared with **604.59 ms** and **18.56 GiB** for ELoFTR under the evaluated settings.
 
-### Transferability of Transport Path Routing
+## Transferability of Transport Path Routing
 
 The routing strategy can also accelerate existing matchers. The following results are from **Table 3**. Original and routed variants are trained from scratch using the corresponding official training protocols; these experiments are separate from Table 1.
 
@@ -99,13 +99,13 @@ The routing strategy can also accelerate existing matchers. The following result
 | SLiM | 55.4 / 54.6 | 193.30 / 147.30 | 1.31x | 5.14 / 4.06 |
 | EDM | 55.4 / 56.1 | 83.58 / 41.56 | 2.01x | 8.24 / 0.60 |
 
-## Code Release
+# Code Release
 
 **Code and pretrained weights have not yet been released.** This repository currently contains the project overview and paper results. Release updates, installation instructions, and usage documentation will be posted here when available.
 
 You can **Watch** this repository for updates. For questions about the project, contact [Jiajun Le](mailto:jiajunle01@gmail.com) or the corresponding author, [Jiayi Ma](mailto:jyma2010@gmail.com).
 
-## Citation
+# Citation
 
 If you find UltraMatch useful in your research, please cite our work. The entry below is provisional; the arXiv identifier and paper URL will be added after the preprint is publicly announced.
 
