@@ -28,10 +28,7 @@
   <a href="#citation"><img src="assets/citation-badge.svg" alt="Citation: BibTeX" height="24"></a>
 </p>
 
-<p align="center">
-  <b>32.26 ms per image pair &nbsp;&middot;&nbsp; 0.44 GiB peak memory &nbsp;&middot;&nbsp; Up to 6K resolution</b><br>
-  <sub>Runtime and memory: MegaDepth-1500. Resolution scalability: ETH3D. Inference on one NVIDIA RTX 3090.</sub>
-</p>
+
 
 ## News
 
