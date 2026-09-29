@@ -1,5 +1,4 @@
-<h1 align="center">UltraMatch</h1>
-<h3 align="center">Transport Path Routing for Ultra-Fast and Memory-Efficient Image Matching</h3>
+<h1 align="center">UltraMatch: Transport Path Routing for Ultra-Fast and Memory-Efficient Image Matching</h1>
 
 <p align="center">
   <a href="https://github.com/JiajunLe">Jiajun Le</a><sup>1</sup> &nbsp;
