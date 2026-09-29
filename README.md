@@ -55,8 +55,8 @@ In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightG
 ### Accuracy and efficiency
 
 <p align="center">
-  <img src="assets/intro.jpg" alt="Resolution scalability of UltraMatch." width="48%">
-  <img src="assets/efficiency.png" alt="Latency versus peak GPU memory on MegaDepth-1500; bubble size indicates relative pose AUC at 5 degrees." width="48%">
+  <img src="assets/intro.jpg" alt="Resolution scalability of UltraMatch." width="55%">
+  <img src="assets/efficiency.png" alt="Efficiency comparison on MegaDepth-1500." width="43%">
 </p>
 
 Results below reproduce **Table 1** of the paper. Pose AUCs are reported at **5 / 10 / 20 degrees**; higher is better. Runtime and peak GPU memory are measured per image pair on **MegaDepth-1500**, using one **NVIDIA RTX 3090**; lower is better.
