@@ -88,7 +88,7 @@ You can **Watch** this repository for updates. For questions about the project, 
 
 ## Citation
 
-If you find UltraMatch useful in your research, please cite our work. The entry below is provisional; the arXiv identifier and paper URL will be added after the preprint is publicly announced.
+If you find UltraMatch useful in your research, please cite our work. 
 
 ```bibtex
 @misc{le2026ultramatch,
