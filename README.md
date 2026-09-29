@@ -68,8 +68,6 @@ In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightG
   <img src="assets/router-score-time-share.png" alt="Routing time as a proportion of total inference time across input resolutions." width="32%">
 </p>
 
-On ETH3D, UltraMatch scales to **6K (6048 x 4032)** with **7.82 GiB** peak inference memory on a single RTX 3090. At **1824 x 1216**, it takes **36.43 ms** and **0.63 GiB**, compared with **604.59 ms** and **18.56 GiB** for ELoFTR under the evaluated settings.
-
 ### Transferability of Transport Path Routing
 
 The routing strategy can also accelerate existing matchers. The following results are from **Table 3**. Original and routed variants are trained from scratch using the corresponding official training protocols.
