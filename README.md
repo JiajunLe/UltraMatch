@@ -42,11 +42,6 @@
   <img src="assets/overview.jpg" alt="UltraMatch architecture: reparameterized feature extraction, feature interaction, Transport Path Routing, sparse global Dual-Softmax, and a tiny fine matching head." width="100%">
 </p>
 
-The framework combines:
-
-- **Transport Path Routing:** select promising block pairs before token-level matching, reducing the matching search space.
-- **Sparse global Dual-Softmax:** preserve global competition across the routed candidates while avoiding the full dense matching matrix.
-- **Efficient feature extraction and refinement:** use structural reparameterization and a compact fine matching head with shared parameters.
 
 In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightGlue** and **4.35x faster than ELoFTR**, with **0.44 GiB** peak inference memory on MegaDepth-1500. On ETH3D, it supports image pairs at **6048 x 4032** resolution on a single RTX 3090. The routing strategy can be readily **integrated into other semi-dense matchers**.
 
