@@ -72,18 +72,14 @@ In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightG
 
 Transport Path Routing can be readily integrated into existing semi-dense matchers, achieving up to **29.02× faster coarse matching**, **2.01× end-to-end speedup**, and **92.7% lower peak GPU memory** across the evaluated methods. The results below reproduce **Table 3** of the paper. Original and routed variants are trained from scratch using the corresponding official training protocols.
 
-Each method is followed by its **+ Routing** variant. Parentheses report **speedup** for end-to-end and coarse matching time, and **percentage reduction** for peak GPU memory, relative to the corresponding original method. Higher pose AUC is better; lower time and memory are better.
+AUC, runtime, and memory are shown as **Original / Routing**. Speedups and memory reductions are relative to the corresponding original method. Higher AUC is better; lower runtime and memory are better.
 
-| Method | Pose AUC@5° ↑ | Pose AUC@10° ↑ | End-to-end (ms) ↓ | Coarse matching (ms) ↓ | Peak memory (GiB) ↓ |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| ELoFTR | 54.9 | 71.2 | 141.61 | 77.88 | 8.64 |
-| + Routing | **55.1** | **71.9** | 76.41 (**1.85×**) | 7.46 (**10.44×**) | 2.02 (**−76.6%**) |
-| JamMa | 55.7 | 70.6 | 362.64 | 204.54 | 5.49 |
-| + Routing | **56.0** | **71.3** | 187.05 (**1.94×**) | 7.05 (**29.02×**) | 1.43 (**−74.0%**) |
-| SLiM | **55.4** | **69.2** | 193.30 | 59.72 | 5.14 |
-| + Routing | 54.6 | 68.5 | 147.30 (**1.31×**) | 14.22 (**4.20×**) | 4.06 (**−21.0%**) |
-| EDM | 55.4 | 71.2 | 83.58 | 47.74 | 8.24 |
-| + Routing | **56.1** | **72.1** | 41.56 (**2.01×**) | 4.73 (**10.09×**) | 0.60 (**−92.7%**) |
+| Method | AUC@10° ↑<br>Original / Routing | End-to-end (ms) ↓<br>Original / Routing | Speedup | Coarse matching (ms) ↓<br>Original / Routing | Speedup | Memory (GiB) ↓<br>Original / Routing | Memory reduction |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ELoFTR | 71.2 / **71.9** | 141.61 / 76.41 | **1.85×** | 77.88 / 7.46 | **10.44×** | 8.64 / 2.02 | **76.6%** |
+| JamMa | 70.6 / **71.3** | 362.64 / 187.05 | **1.94×** | 204.54 / 7.05 | **29.02×** | 5.49 / 1.43 | **74.0%** |
+| SLiM | **69.2** / 68.5 | 193.30 / 147.30 | **1.31×** | 59.72 / 14.22 | **4.20×** | 5.14 / 4.06 | **21.0%** |
+| EDM | 71.2 / **72.1** | 83.58 / 41.56 | **2.01×** | 47.74 / 4.73 | **10.09×** | 8.24 / 0.60 | **92.7%** |
 
 ## Code Release
 
