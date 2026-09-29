@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="122" height="24" viewBox="0 0 122 24" role="img" aria-label="Project: GitHub">
+  <title>Project: GitHub</title>
+  <path fill="#555" d="M0 0h60v24H0z"/>
+  <path fill="#24292f" d="M60 0h62v24H60z"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12">
+    <text x="30" y="16">Project</text>
+    <text x="91" y="16">GitHub</text>
+  </g>
+</svg>

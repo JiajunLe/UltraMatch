@@ -1,29 +1,31 @@
 <h1 align="center">UltraMatch: Transport Path Routing for Ultra-Fast and Memory-Efficient Image Matching</h1>
 
-<p align="center">
-  <a href="https://github.com/JiajunLe">Jiajun Le</a><sup>1</sup> &nbsp;
-  Yifan Lu<sup>1</sup> &nbsp;
-  Zizhuo Li<sup>1</sup> &nbsp;
-  Lei Cao<sup>1,2</sup> &nbsp;
-  Junjun Jiang<sup>3</sup> &nbsp;
-  Jiayi Ma<sup>1,4,*</sup>
-</p>
+<h3 align="center">
+  <a href="https://github.com/JiajunLe">Jiajun Le</a><sup>1</sup> &middot;
+  <a href="https://scholar.google.com/citations?user=h-9Ub_cAAAAJ&amp;hl=zh-CN">Yifan Lu</a><sup>1</sup> &middot;
+  <a href="https://scholar.google.com/citations?user=bxuEALEAAAAJ&amp;hl=zh-CN">Zizhuo Li</a><sup>1</sup> &middot;
+  <a href="https://scholar.google.com/citations?user=LaT72N4AAAAJ&amp;hl=zh-CN&amp;oi=sra">Lei Cao</a><sup>1,2</sup> &middot;
+  <a href="https://scholar.google.com/citations?user=WNH2_rgAAAAJ&amp;hl=zh-CN">Junjun Jiang</a><sup>3</sup> &middot;
+  <a href="https://scholar.google.com/citations?user=73trMQkAAAAJ&amp;hl=zh-CN&amp;oi=sra">Jiayi Ma</a><sup>1,4,*</sup>
+</h3>
 
 <p align="center">
   <sup>1</sup>Electronic Information School, Wuhan University<br>
   <sup>2</sup>Xiaomi Corporation<br>
   <sup>3</sup>School of Computer Science and Technology, Harbin Institute of Technology<br>
-  <sup>4</sup>School of Robotics, Wuhan University<br>
-  <sup>*</sup>Corresponding author
+  <sup>4</sup>School of Robotics, Wuhan University
 </p>
 
 <p align="center">
-  <b>arXiv: public link pending</b> &nbsp;|&nbsp;
-  <a href="https://github.com/JiajunLe/UltraMatch">GitHub</a> &nbsp;|&nbsp;
-  <a href="#results">Results</a> &nbsp;|&nbsp;
-  <a href="#code-release">Code Release</a> &nbsp;|&nbsp;
-  <a href="#citation">Citation</a> &nbsp;|&nbsp;
-  <a href="mailto:jiajunle01@gmail.com">Contact</a>
+  <sup>*</sup>Corresponding author
+</p>
+
+<!-- Add the public arXiv URL around the badge after announcement. -->
+<p align="center">
+  <img src="assets/arxiv-badge.svg" alt="arXiv: coming soon" height="24">
+  <a href="https://github.com/JiajunLe/UltraMatch"><img src="assets/github-badge.svg" alt="Project: GitHub" height="24"></a>
+  <a href="#code-release"><img src="assets/code-badge.svg" alt="Code: coming soon" height="24"></a>
+  <a href="#citation"><img src="assets/citation-badge.svg" alt="Citation: BibTeX" height="24"></a>
 </p>
 
 <p align="center">

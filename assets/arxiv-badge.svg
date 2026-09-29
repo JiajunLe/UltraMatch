@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="152" height="24" viewBox="0 0 152 24" role="img" aria-label="arXiv: Coming soon">
+  <title>arXiv: Coming soon</title>
+  <path fill="#555" d="M0 0h52v24H0z"/>
+  <path fill="#b31b1b" d="M52 0h100v24H52z"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12">
+    <text x="26" y="16">arXiv</text>
+    <text x="102" y="16">Coming soon</text>
+  </g>
+</svg>

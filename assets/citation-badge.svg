@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" role="img" aria-label="Citation: BibTeX">
+  <title>Citation: BibTeX</title>
+  <path fill="#555" d="M0 0h66v24H0z"/>
+  <path fill="#24599b" d="M66 0h62v24H66z"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12">
+    <text x="33" y="16">Citation</text>
+    <text x="97" y="16">BibTeX</text>
+  </g>
+</svg>
