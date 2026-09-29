@@ -72,14 +72,14 @@ In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightG
 
 Transport Path Routing can be readily integrated into existing semi-dense matchers, achieving up to **29.02× faster coarse matching**, **2.01× end-to-end speedup**, and **92.7% lower peak GPU memory** across the evaluated methods. The results below reproduce **Table 3** of the paper. Original and routed variants are trained from scratch using the corresponding official training protocols.
 
-AUC, runtime, and memory are shown as **Original / Routing**. Speedups and memory reductions are relative to the corresponding original method. Higher AUC is better; lower runtime and memory are better.
+AUC, runtime, and memory are shown as **Original / Routing**.
 
-| Method | AUC@10° ↑<br>Original / Routing | End-to-end (ms) ↓<br>Original / Routing | Speedup | Coarse matching (ms) ↓<br>Original / Routing | Speedup | Memory (GiB) ↓<br>Original / Routing | Memory reduction |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| ELoFTR | 71.2 / **71.9** | 141.61 / 76.41 | **1.85×** | 77.88 / 7.46 | **10.44×** | 8.64 / 2.02 | **76.6%** |
-| JamMa | 70.6 / **71.3** | 362.64 / 187.05 | **1.94×** | 204.54 / 7.05 | **29.02×** | 5.49 / 1.43 | **74.0%** |
-| SLiM | **69.2** / 68.5 | 193.30 / 147.30 | **1.31×** | 59.72 / 14.22 | **4.20×** | 5.14 / 4.06 | **21.0%** |
-| EDM | 71.2 / **72.1** | 83.58 / 41.56 | **2.01×** | 47.74 / 4.73 | **10.09×** | 8.24 / 0.60 | **92.7%** |
+| Method | AUC@10° ↑ | End-to-end (ms) ↓ | Coarse matching (ms) ↓ | Memory (GiB) ↓ |
+| :--- | :---: | :---: | :---: | :---: |
+| ELoFTR | 71.2 / **71.9** | 141.61 / 76.41 (**1.85×**) | 77.88 / 7.46 (**10.44×**) | 8.64 / 2.02 (**−76.6%**) |
+| JamMa | 70.6 / **71.3** | 362.64 / 187.05 (**1.94×**) | 204.54 / 7.05 (**29.02×**) | 5.49 / 1.43 (**−74.0%**) |
+| SLiM | **69.2** / 68.5 | 193.30 / 147.30 (**1.31×**) | 59.72 / 14.22 (**4.20×**) | 5.14 / 4.06 (**−21.0%**) |
+| EDM | 71.2 / **72.1** | 83.58 / 41.56 (**2.01×**) | 47.74 / 4.73 (**10.09×**) | 8.24 / 0.60 (**−92.7%**) |
 
 ## Code Release
 
