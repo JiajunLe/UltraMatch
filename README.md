@@ -25,7 +25,15 @@
   <a href="#citation"><img src="assets/citation-badge.svg" alt="Citation: BibTeX" height="24"></a>
 </p>
 
-
+<p align="center">
+  <a href="https://github.com/JiajunLe/UltraMatch/raw/refs/heads/main/assets/ultramatch-eloftr-demo.mp4">
+    <img src="assets/ultramatch-eloftr-demo.webp" alt="Continuous image matching comparison between UltraMatch and ELoFTR." width="100%">
+  </a>
+</p>
+<p align="center">
+  <sub>UltraMatch vs. ELoFTR &middot; 1920 &times; 1080 input images &middot; NVIDIA RTX 3090</sub><br>
+  <a href="https://github.com/JiajunLe/UltraMatch/raw/refs/heads/main/assets/ultramatch-eloftr-demo.mp4">Download full-resolution MP4</a>
+</p>
 
 ## News
 
