@@ -91,11 +91,10 @@ You can **Watch** this repository for updates. For questions about the project, 
 If you find UltraMatch useful in your research, please cite our work. 
 
 ```bibtex
-@misc{le2026ultramatch,
-  title  = {{UltraMatch}: Transport Path Routing for Ultra-Fast and Memory-Efficient Image Matching},
-  author = {Le, Jiajun and Lu, Yifan and Li, Zizhuo and Cao, Lei and Jiang, Junjun and Ma, Jiayi},
-  year   = {2026},
-  note   = {Manuscript},
-  url    = {https://github.com/JiajunLe/UltraMatch}
+@article{le2026ultramatch,
+  title={UltraMatch: Transport Path Routing for Ultra-Fast and Memory-Efficient Image Matching},
+  author={Le, Jiajun and Lu, Yifan and Li, Zizhuo and Cao, Lei and Jiang, Junjun and Ma, Jiayi},
+  journal={arXiv preprint arXiv:2609.36980},
+  year={2026}
 }
 ```
