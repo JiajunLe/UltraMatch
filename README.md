@@ -22,8 +22,6 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2609.36980"><img src="assets/arxiv-badge.svg" alt="arXiv: 2609.36980" height="24"></a>
-  <a href="https://github.com/JiajunLe/UltraMatch"><img src="assets/github-badge.svg" alt="Project: GitHub" height="24"></a>
-  <a href="#code-release"><img src="assets/code-badge.svg" alt="Code: coming soon" height="24"></a>
   <a href="#citation"><img src="assets/citation-badge.svg" alt="Citation: BibTeX" height="24"></a>
 </p>
 
