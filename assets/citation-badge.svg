@@ -1,9 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" role="img" aria-label="Citation: BibTeX">
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="20" viewBox="0 0 110 20" role="img" aria-label="Citation: BibTeX">
   <title>Citation: BibTeX</title>
-  <path fill="#555" d="M0 0h66v24H0z"/>
-  <path fill="#24599b" d="M66 0h62v24H66z"/>
-  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12">
-    <text x="33" y="16">Citation</text>
-    <text x="97" y="16">BibTeX</text>
+  <defs>
+    <linearGradient id="shade" x2="0" y2="100%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".1"/>
+    </linearGradient>
+    <clipPath id="rounded"><rect width="110" height="20" rx="3"/></clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <path fill="#555" d="M0 0h58v20H0z"/>
+    <path fill="#007ec6" d="M58 0h52v20H58z"/>
+    <rect width="110" height="20" fill="url(#shade)"/>
+  </g>
+  <g text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11">
+    <g fill="#000" fill-opacity=".3">
+      <text x="29" y="15">Citation</text>
+      <text x="84" y="15">BibTeX</text>
+    </g>
+    <g fill="#fff">
+      <text x="29" y="14">Citation</text>
+      <text x="84" y="14">BibTeX</text>
+    </g>
   </g>
 </svg>

@@ -21,8 +21,8 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2609.36980"><img src="assets/arxiv-badge.svg" alt="arXiv: 2609.36980" height="24"></a>
-  <a href="#citation"><img src="assets/citation-badge.svg" alt="Citation: BibTeX" height="24"></a>
+  <a href="https://arxiv.org/abs/2609.36980"><img src="assets/arxiv-badge.svg" alt="arXiv: 2609.36980" height="20"></a>
+  <a href="#citation"><img src="assets/citation-badge.svg" alt="Citation: BibTeX" height="20"></a>
 </p>
 
 <details open>
