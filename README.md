@@ -25,17 +25,22 @@
   <a href="#citation"><img src="assets/citation-badge.svg" alt="Citation: BibTeX" height="20"></a>
 </p>
 
-<table width="100%">
+<table width="100%" align="center">
   <tr>
-    <td>
+    <td width="100%" align="left">
       <details open>
-        <summary><img src="assets/video-icon.svg" alt="" width="16" height="16">&nbsp; UltraMatch video demo</summary>
-        <hr>
+        <summary>
+          <img src="assets/video-icon.svg" alt="" width="16" height="16" align="absmiddle">&nbsp; UltraMatch video demo<br>
+          <img src="assets/demo-divider.svg" alt="" width="1200" height="1">
+        </summary>
         <img src="assets/ultramatch-eloftr-demo.webp" alt="Continuous image matching comparison between UltraMatch and ELoFTR." width="100%">
       </details>
     </td>
   </tr>
 </table>
+<p align="center">
+  <a href="https://github.com/JiajunLe/UltraMatch/raw/refs/heads/main/assets/ultramatch-eloftr-demo.mp4">Download video (MP4)</a>
+</p>
 
 ## News
 
