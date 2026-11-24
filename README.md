@@ -152,9 +152,7 @@ To resume training, set `RESUME_CKPT_PATH` to a file in the run's `checkpoints/r
 
 ## Acknowledgements
 
-UltraMatch is based on the [EDM codebase](https://github.com/chicleee/EDM). We retain its dense coarse-matching loss and ScanNet matching thresholds.
-
-We also use code from [EfficientLoFTR](https://github.com/zju3dv/EfficientLoFTR) and [Residual Log-likelihood Estimation](https://github.com/Jeff-sjtu/res-loglikelihood-regression).
+UltraMatch is based on [EDM](https://github.com/chicleee/EDM) and [EfficientLoFTR](https://github.com/zju3dv/EfficientLoFTR). We thank the authors of both projects for their excellent work.
 
 ## Citation
 
