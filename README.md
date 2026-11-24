@@ -68,37 +68,6 @@
 
 </details>
 
-## Results
-
-### High-resolution scalability
-
-<p align="center">
-  <img src="assets/inference-runtime.png" alt="Inference runtime as input resolution increases on ETH3D." width="32%">
-  <img src="assets/inference-memory.png" alt="Peak inference GPU memory as input resolution increases on ETH3D." width="32%">
-  <img src="assets/training-memory.png" alt="Peak training GPU memory as input resolution increases." width="32%">
-</p>
-<p align="center">
-  <img src="assets/pose-auc5.png" alt="Relative pose AUC at 5 degrees as input resolution increases." width="32%">
-  <img src="assets/gt-route-coverage.png" alt="Ground-truth route coverage as input resolution increases." width="32%">
-  <img src="assets/router-score-time-share.png" alt="Routing time as a proportion of total inference time across input resolutions." width="32%">
-</p>
-
-<p align="center">
-  <em>UltraMatch runs substantially faster and uses less GPU memory than the other matchers at comparable resolutions. It reaches 6K inference on a single RTX 3090 with 7.82 GiB of peak memory. With halo expansion, the router covers 80% of ground-truth routes at 2K and 53% at 6K.</em>
-</p>
-
-### Transferability of Transport Path Routing
-
-AUC, runtime, and memory are shown as **Original / Routing**.
-
-| Method | AUC@10° ↑ | End-to-end (ms) ↓ | Coarse matching (ms) ↓ | Memory (GiB) ↓ |
-| :--- | :---: | :---: | :---: | :---: |
-| ELoFTR | 71.2 / **71.9** | 141.61 / 76.41 (**1.85×**) | 77.88 / 7.46 (**10.44×**) | 8.64 / 2.02 (**−76.6%**) |
-| JamMa | 70.6 / **71.3** | 362.64 / 187.05 (**1.94×**) | 204.54 / 7.05 (**29.02×**) | 5.49 / 1.43 (**−74.0%**) |
-| SLiM | **69.2** / 68.5 | 193.30 / 147.30 (**1.31×**) | 59.72 / 14.22 (**4.20×**) | 5.14 / 4.06 (**−21.0%**) |
-| EDM | 71.2 / **72.1** | 83.58 / 41.56 (**2.01×**) | 47.74 / 4.73 (**10.09×**) | 8.24 / 0.60 (**−92.7%**) |
-
-
 ## Installation
 
 Run these commands from the repository root on Linux with a CUDA-capable GPU. The evaluation scripts use PyTorch 2.0.0 with CUDA 11.8.
@@ -140,6 +109,37 @@ Train UltraMatch on MegaDepth.
 ```bash
 bash scripts/reproduce_train/outdoor.sh
 ```
+
+## Benchmarks and Transferability
+
+### High-resolution scalability
+
+<p align="center">
+  <img src="assets/inference-runtime.png" alt="Inference runtime as input resolution increases on ETH3D." width="32%">
+  <img src="assets/inference-memory.png" alt="Peak inference GPU memory as input resolution increases on ETH3D." width="32%">
+  <img src="assets/training-memory.png" alt="Peak training GPU memory as input resolution increases." width="32%">
+</p>
+<p align="center">
+  <img src="assets/pose-auc5.png" alt="Relative pose AUC at 5 degrees as input resolution increases." width="32%">
+  <img src="assets/gt-route-coverage.png" alt="Ground-truth route coverage as input resolution increases." width="32%">
+  <img src="assets/router-score-time-share.png" alt="Routing time as a proportion of total inference time across input resolutions." width="32%">
+</p>
+
+<p align="center">
+  <em>UltraMatch runs substantially faster and uses less GPU memory than the other matchers at comparable resolutions. It reaches 6K inference on a single RTX 3090 with 7.82 GiB of peak memory. With halo expansion, the router covers 80% of ground-truth routes at 2K and 53% at 6K.</em>
+</p>
+
+### Transferability of Transport Path Routing
+
+AUC, runtime, and memory are shown as **Original / Routing**.
+
+| Method | AUC@10° ↑ | End-to-end (ms) ↓ | Coarse matching (ms) ↓ | Memory (GiB) ↓ |
+| :--- | :---: | :---: | :---: | :---: |
+| ELoFTR | 71.2 / **71.9** | 141.61 / 76.41 (**1.85×**) | 77.88 / 7.46 (**10.44×**) | 8.64 / 2.02 (**−76.6%**) |
+| JamMa | 70.6 / **71.3** | 362.64 / 187.05 (**1.94×**) | 204.54 / 7.05 (**29.02×**) | 5.49 / 1.43 (**−74.0%**) |
+| SLiM | **69.2** / 68.5 | 193.30 / 147.30 (**1.31×**) | 59.72 / 14.22 (**4.20×**) | 5.14 / 4.06 (**−21.0%**) |
+| EDM | 71.2 / **72.1** | 83.58 / 41.56 (**2.01×**) | 47.74 / 4.73 (**10.09×**) | 8.24 / 0.60 (**−92.7%**) |
+
 
 ## Acknowledgements
 
