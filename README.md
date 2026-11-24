@@ -46,9 +46,7 @@
 
 **[2026-09-29]** The UltraMatch paper has been submitted to arXiv.
 
-<a id="overview"></a>
-<details>
-<summary><strong>Overview</strong></summary>
+## Overview
 
 **UltraMatch is an efficient, scalable semi-dense image matcher that routes computation to a small set of promising matching paths.** Instead of constructing a full token-to-token matching matrix, a lightweight **Transport Path Router** ranks candidate target blocks for each source block and retains only a small subset. Matching then runs over the selected paths.
 
@@ -59,13 +57,9 @@
 
 In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightGlue** and **4.35x faster than ELoFTR**, with **0.44 GiB** peak inference memory on MegaDepth-1500. On ETH3D, it supports image pairs at **6048 x 4032** resolution on a single RTX 3090. The routing strategy can be readily **integrated into other semi-dense matchers**.
 
-</details>
-
 ## Results
 
-<a id="accuracy-and-efficiency"></a>
-<details>
-<summary><strong>Accuracy and efficiency</strong></summary>
+### Accuracy and efficiency
 
 <p>
   <img align="left" src="assets/intro.jpg" alt="Resolution scalability of UltraMatch." width="49%">
@@ -73,11 +67,7 @@ In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightG
 </p>
 <br clear="all">
 
-</details>
-
-<a id="high-resolution-scalability"></a>
-<details>
-<summary><strong>High-resolution scalability</strong></summary>
+### High-resolution scalability
 
 <p align="center">
   <img src="assets/inference-runtime.png" alt="Inference runtime as input resolution increases on ETH3D." width="32%">
@@ -90,11 +80,7 @@ In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightG
   <img src="assets/router-score-time-share.png" alt="Routing time as a proportion of total inference time across input resolutions." width="32%">
 </p>
 
-</details>
-
-<a id="transferability-of-transport-path-routing"></a>
-<details>
-<summary><strong>Transferability of Transport Path Routing</strong></summary>
+### Transferability of Transport Path Routing
 
 AUC, runtime, and memory are shown as **Original / Routing**.
 
@@ -104,8 +90,6 @@ AUC, runtime, and memory are shown as **Original / Routing**.
 | JamMa | 70.6 / **71.3** | 362.64 / 187.05 (**1.94×**) | 204.54 / 7.05 (**29.02×**) | 5.49 / 1.43 (**−74.0%**) |
 | SLiM | **69.2** / 68.5 | 193.30 / 147.30 (**1.31×**) | 59.72 / 14.22 (**4.20×**) | 5.14 / 4.06 (**−21.0%**) |
 | EDM | 71.2 / **72.1** | 83.58 / 41.56 (**2.01×**) | 47.74 / 4.73 (**10.09×**) | 8.24 / 0.60 (**−92.7%**) |
-
-</details>
 
 
 ## Installation
