@@ -111,6 +111,8 @@ Download [outdoor.ckpt](https://github.com/JiajunLe/UltraMatch/releases/download
 
 ## Evaluation
 
+Run the following scripts to evaluate UltraMatch on MegaDepth-1500 (outdoor) and ScanNet-1500 (indoor) with the default settings.
+
 ```bash
 bash scripts/reproduce_test/outdoor.sh   # MegaDepth-1500, 1152 × 1152
 bash scripts/reproduce_test/indoor.sh    # ScanNet-1500, 640 × 480
