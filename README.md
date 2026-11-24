@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/JiajunLe/UltraMatch"><img src="assets/code-badge.svg" alt="Code: UltraMatch" height="20"></a>
-  <a href="https://arxiv.org/abs/2609.36980"><img src="assets/arxiv-badge.svg" alt="Paper: arXiv:2609.36980" height="20"></a>
+  <a href="https://arxiv.org/abs/2609.36980"><img src="assets/paper-badge.svg" alt="Paper: arXiv:2609.36980" height="20"></a>
   <a href="https://github.com/JiajunLe/UltraMatch/releases/tag/v1.0.0"><img src="assets/weights-badge.svg" alt="Weights: v1.0.0" height="20"></a>
   <a href="#citation"><img src="assets/citation-badge.svg" alt="Citation: BibTeX" height="20"></a>
 </p>
