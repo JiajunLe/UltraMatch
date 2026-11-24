@@ -28,13 +28,11 @@
 <table width="100%" align="center">
   <tr>
     <td width="100%" align="left">
-      <details open>
-        <summary>
-          <img src="assets/video-icon.svg" alt="" width="16" height="16" align="absmiddle">&nbsp; UltraMatch video demo<br>
-          <img src="assets/demo-divider.svg" alt="" width="1200" height="1">
-        </summary>
-        <img src="assets/ultramatch-eloftr-demo.webp" alt="Continuous image matching comparison between UltraMatch and ELoFTR." width="100%">
-      </details>
+      <div>
+        <img src="assets/video-icon.svg" alt="" width="16" height="16" align="absmiddle">&nbsp; UltraMatch video demo<br>
+        <img src="assets/demo-divider.svg" alt="" width="1200" height="1">
+      </div>
+      <img src="assets/ultramatch-eloftr-demo.webp" alt="Continuous image matching comparison between UltraMatch and ELoFTR." width="100%">
     </td>
   </tr>
 </table>
