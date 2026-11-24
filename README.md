@@ -121,12 +121,49 @@ bash scripts/reproduce_train/outdoor.sh
 
 AUC, runtime, and memory are shown as **Original / Routing**.
 
-| Method | AUC@10° ↑ | End-to-end (ms) ↓ | Coarse matching (ms) ↓ | Memory (GiB) ↓ |
-| :--- | :---: | :---: | :---: | :---: |
-| ELoFTR | 71.2 / **71.9** | 141.61 / 76.41 (**1.85×**) | 77.88 / 7.46 (**10.44×**) | 8.64 / 2.02 (**−76.6%**) |
-| JamMa | 70.6 / **71.3** | 362.64 / 187.05 (**1.94×**) | 204.54 / 7.05 (**29.02×**) | 5.49 / 1.43 (**−74.0%**) |
-| SLiM | **69.2** / 68.5 | 193.30 / 147.30 (**1.31×**) | 59.72 / 14.22 (**4.20×**) | 5.14 / 4.06 (**−21.0%**) |
-| EDM | 71.2 / **72.1** | 83.58 / 41.56 (**2.01×**) | 47.74 / 4.73 (**10.09×**) | 8.24 / 0.60 (**−92.7%**) |
+<table align="center">
+  <thead>
+    <tr>
+      <th align="left">Method</th>
+      <th align="center">AUC@10° ↑</th>
+      <th align="center">End-to-end (ms) ↓</th>
+      <th align="center">Coarse matching (ms) ↓</th>
+      <th align="center">Memory (GiB) ↓</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">ELoFTR</td>
+      <td align="center">71.2 / <strong>71.9</strong></td>
+      <td align="center">141.61 / 76.41 (<strong>1.85×</strong>)</td>
+      <td align="center">77.88 / 7.46 (<strong>10.44×</strong>)</td>
+      <td align="center">8.64 / 2.02 (<strong>−76.6%</strong>)</td>
+    </tr>
+    <tr>
+      <td align="left">JamMa</td>
+      <td align="center">70.6 / <strong>71.3</strong></td>
+      <td align="center">362.64 / 187.05 (<strong>1.94×</strong>)</td>
+      <td align="center">204.54 / 7.05 (<strong>29.02×</strong>)</td>
+      <td align="center">5.49 / 1.43 (<strong>−74.0%</strong>)</td>
+    </tr>
+    <tr>
+      <td align="left">SLiM</td>
+      <td align="center"><strong>69.2</strong> / 68.5</td>
+      <td align="center">193.30 / 147.30 (<strong>1.31×</strong>)</td>
+      <td align="center">59.72 / 14.22 (<strong>4.20×</strong>)</td>
+      <td align="center">5.14 / 4.06 (<strong>−21.0%</strong>)</td>
+    </tr>
+    <tr>
+      <td align="left">EDM</td>
+      <td align="center">71.2 / <strong>72.1</strong></td>
+      <td align="center">83.58 / 41.56 (<strong>2.01×</strong>)</td>
+      <td align="center">47.74 / 4.73 (<strong>10.09×</strong>)</td>
+      <td align="center">8.24 / 0.60 (<strong>−92.7%</strong>)</td>
+    </tr>
+  </tbody>
+</table>
+
+We recommend integrating **Transport Path Routing** into your own semi-dense matcher to reduce the cost of coarse matching during training and inference. Across the four matchers above, routing improved end-to-end inference speed by **1.31× to 2.01×**.
 
 
 ## Acknowledgements
