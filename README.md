@@ -83,6 +83,10 @@
   <img src="assets/router-score-time-share.png" alt="Routing time as a proportion of total inference time across input resolutions." width="32%">
 </p>
 
+<p align="center">
+  <em>UltraMatch runs substantially faster and uses less GPU memory than the other matchers at comparable resolutions. It reaches 6K inference on a single RTX 3090 with 7.82 GiB of peak memory. With halo expansion, the router covers 80% of ground-truth routes at 2K and 53% at 6K.</em>
+</p>
+
 ### Transferability of Transport Path Routing
 
 AUC, runtime, and memory are shown as **Original / Routing**.
