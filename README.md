@@ -1,13 +1,13 @@
 <h1 align="center">UltraMatch: Transport Path Routing for Ultra-Fast and Memory-Efficient Image Matching</h1>
 
-<h3 align="center">
+<p align="center">
   <a href="https://scholar.google.com/citations?user=uWhzrG4AAAAJ&hl=zh-CN">Jiajun Le</a> &middot;
   <a href="https://scholar.google.com/citations?user=h-9Ub_cAAAAJ&amp;hl=zh-CN">Yifan Lu</a> &middot;
   <a href="https://scholar.google.com/citations?user=bxuEALEAAAAJ&amp;hl=zh-CN">Zizhuo Li</a> &middot;
   <a href="https://scholar.google.com/citations?user=LaT72N4AAAAJ&amp;hl=zh-CN&amp;oi=sra">Lei Cao</a> &middot;
   <a href="https://scholar.google.com/citations?user=WNH2_rgAAAAJ&amp;hl=zh-CN">Junjun Jiang</a> &middot;
   <a href="https://scholar.google.com/citations?user=73trMQkAAAAJ&amp;hl=zh-CN&amp;oi=sra">Jiayi Ma</a>
-</h3>
+</p>
 
 <p align="center">
   <a href="https://github.com/JiajunLe/UltraMatch"><img src="assets/code-badge.svg" alt="Code: UltraMatch" height="20"></a>
@@ -20,16 +20,13 @@
   <tr>
     <td width="100%" align="left">
       <div>
-        <img src="assets/video-icon.svg" alt="" width="16" height="16" align="absmiddle">&nbsp; UltraMatch video demo<br>
+        <img src="assets/video-icon.svg" alt="" width="16" height="16" align="absmiddle">&nbsp; UltraMatch video demo &middot; <a href="https://github.com/JiajunLe/UltraMatch/raw/refs/heads/main/assets/ultramatch-eloftr-demo.mp4">Download video (MP4)</a><br>
         <img src="assets/demo-divider.svg" alt="" width="1200" height="1">
       </div>
       <img src="assets/ultramatch-eloftr-demo.webp" alt="Continuous image matching comparison between UltraMatch and ELoFTR." width="100%">
     </td>
   </tr>
 </table>
-<p align="center">
-  <a href="https://github.com/JiajunLe/UltraMatch/raw/refs/heads/main/assets/ultramatch-eloftr-demo.mp4">Download video (MP4)</a>
-</p>
 
 ## News
 
