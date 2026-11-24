@@ -163,7 +163,9 @@ AUC, runtime, and memory are shown as **Original / Routing**.
   </tbody>
 </table>
 
-We recommend adding **Transport Path Routing** to your matcher for more efficient training and inference.
+<p align="center">
+  <em>We recommend adding <strong>Transport Path Routing</strong> to your matcher for more efficient training and inference.</em>
+</p>
 
 
 ## Acknowledgements
