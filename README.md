@@ -44,7 +44,7 @@
 
 ## News
 
-**[2026-09-29]** The UltraMatch paper has been submitted to arXiv. The public paper link and arXiv citation will be added after announcement.
+**[2026-09-29]** The UltraMatch paper has been submitted to arXiv.
 
 <a id="overview"></a>
 <details>
@@ -107,18 +107,6 @@ AUC, runtime, and memory are shown as **Original / Routing**.
 
 </details>
 
-## Code Release
-
-The code and MegaDepth-trained weights for the MegaDepth-1500 and ScanNet-1500 relative pose experiments are available in [UltraMatch v1.0.0](https://github.com/JiajunLe/UltraMatch/releases/tag/v1.0.0).
-
-<details>
-<summary>Original pre-release announcement</summary>
-
-**The paper is currently under review, so the code and pretrained weights have not yet been released.** This repository currently contains the project overview and paper results. Release updates, installation instructions, and usage documentation will be posted here when available.
-
-</details>
-
-You can **Watch** this repository for updates. For questions about the project, contact [Jiajun Le](mailto:jiajunle01@gmail.com) or the corresponding author, [Jiayi Ma](mailto:jyma2010@gmail.com).
 
 ## Installation
 
