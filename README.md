@@ -48,14 +48,11 @@
 
 ## Overview
 
-**UltraMatch is an efficient, scalable semi-dense image matcher that routes computation to a small set of promising matching paths.** Instead of constructing a full token-to-token matching matrix, a lightweight **Transport Path Router** ranks candidate target blocks for each source block and retains only a small subset. Matching then runs over the selected paths.
+**UltraMatch is an efficient, scalable semi-dense image matcher that routes computation to a small set of promising matching paths.** Instead of constructing a full token-to-token matching matrix, a lightweight **Transport Path Router** ranks candidate target blocks for each source block and retains only a small subset. Matching then runs over the selected paths. The routing strategy can be readily **integrated into other semi-dense matchers**.
 
 <p align="center">
   <img src="assets/overview.jpg" alt="UltraMatch architecture: reparameterized feature extraction, feature interaction, Transport Path Routing, sparse global Dual-Softmax, and a tiny fine matching head." width="100%">
 </p>
-
-
-In the reported experiments, UltraMatch is **1.67x faster than SuperPoint+LightGlue** and **4.35x faster than ELoFTR**, with **0.44 GiB** peak inference memory on MegaDepth-1500. On ETH3D, it supports image pairs at **6048 x 4032** resolution on a single RTX 3090. The routing strategy can be readily **integrated into other semi-dense matchers**.
 
 ## Results
 
