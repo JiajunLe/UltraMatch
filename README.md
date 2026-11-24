@@ -109,9 +109,64 @@ AUC, runtime, and memory are shown as **Original / Routing**.
 
 ## Code Release
 
+The code and MegaDepth-trained weights for the MegaDepth-1500 and ScanNet-1500 relative pose experiments are available in [UltraMatch v1.0.0](https://github.com/JiajunLe/UltraMatch/releases/tag/v1.0.0).
+
+<details>
+<summary>Original pre-release announcement</summary>
+
 **The paper is currently under review, so the code and pretrained weights have not yet been released.** This repository currently contains the project overview and paper results. Release updates, installation instructions, and usage documentation will be posted here when available.
 
+</details>
+
 You can **Watch** this repository for updates. For questions about the project, contact [Jiajun Le](mailto:jiajunle01@gmail.com) or the corresponding author, [Jiayi Ma](mailto:jyma2010@gmail.com).
+
+## Installation
+
+Run these commands from the repository root on Linux with a CUDA-capable GPU. The evaluation scripts use PyTorch 2.0.0 with CUDA 11.8.
+
+```bash
+conda env create -f environment.yaml
+conda activate ultramatch
+python -m pip install torch==2.0.0 torchvision==0.15.1 --index-url https://download.pytorch.org/whl/cu118
+python -m pip install -r requirements.txt
+```
+
+## Single-pair demo
+
+Download [outdoor.ckpt](https://github.com/JiajunLe/UltraMatch/releases/download/v1.0.0/outdoor.ckpt) and save it as `weights/outdoor.ckpt`. The same MegaDepth-trained weights are used for indoor and outdoor images. The notebook runs inference on the included ScanNet and PhotoTourism examples and draws the matched points. [Open the demo](demo_single_pair.ipynb).
+
+Import the Python model with `from src.ultramatch import UltraMatch`. The indoor and outdoor model settings live in `configs/ultramatch/` under `cfg.ULTRAMATCH`. New checkpoints use the parameter prefix `ultramatch.`. The loader also accepts earlier checkpoints with the `matcher.` prefix.
+
+## Evaluation
+
+Download the MegaDepth-1500 and ScanNet-1500 test subsets. Place or link their contents under `data/megadepth/test/` and `data/scannet/test/`, respectively. MegaDepth expects `Undistorted_SfM/` under its test directory. ScanNet expects the `scene*` directories under its test directory. The pair lists, poses for MegaDepth, and ScanNet intrinsics are in `assets/`. [LoFTR test data](https://drive.google.com/drive/folders/1DOcOPZb3-5cWxLqn256AhwUVjBPifhuf).
+
+```bash
+bash scripts/reproduce_test/outdoor.sh   # MegaDepth-1500, 1152 × 1152
+bash scripts/reproduce_test/indoor.sh    # ScanNet-1500, 640 × 480
+```
+
+Both scripts use GPU 0 by default and report pose AUC at 5°, 10°, and 20°. Use `GPU_ID` to select another GPU or `CKPT_PATH` to evaluate a different checkpoint. The default pose solver uses OpenCV. For the optional `test.py --ransac LO-RANSAC` solver, install PoseLib with `python -m pip install poselib==2.0.4`.
+
+The scripts use the settings in the model and data configuration files. To override a setting for one run, pass it to the script, for example `bash scripts/reproduce_test/outdoor.sh --route_topk 4`. The default BF16 feature extraction falls back to FP32 on GPUs without BF16 support.
+
+## Training
+
+Prepare the MegaDepth images, depth maps and scene indices. The training configuration reads the dataset from `data/megadepth/train/`, the validation images and depth maps from `data/megadepth/test/`, and the scene indices from `data/megadepth/index/`. [LoFTR data preparation](https://github.com/zju3dv/LoFTR/blob/master/docs/TRAINING.md).
+
+```bash
+bash scripts/reproduce_train/outdoor.sh
+```
+
+The default run uses four GPUs, a batch size of eight per GPU, and 30 epochs. The script saves checkpoints in `logs/tb_logs/ultramatch/version_*/checkpoints/`.
+
+To resume training, set `RESUME_CKPT_PATH` to a file in the run's `checkpoints/recovery/` directory.
+
+## Acknowledgements
+
+UltraMatch is based on the [EDM codebase](https://github.com/chicleee/EDM). We retain its dense coarse-matching loss and ScanNet matching thresholds.
+
+We also use code from [EfficientLoFTR](https://github.com/zju3dv/EfficientLoFTR) and [Residual Log-likelihood Estimation](https://github.com/Jeff-sjtu/res-loglikelihood-regression).
 
 ## Citation
 

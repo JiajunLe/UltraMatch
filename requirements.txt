@@ -1,0 +1,18 @@
+# Install the CUDA build of PyTorch first (see README.md).
+torch==2.0.0
+lightning==2.3.3
+pytorch-lightning==2.3.3
+torchmetrics==1.4.0.post0
+tensorboard==2.14.0
+
+numpy==1.24.4
+opencv-python-headless==4.4.0.46
+einops==0.3.0
+kornia==0.6.8
+loguru==0.5.3
+yacs==0.1.8
+tqdm==4.67.1
+h5py==3.1.0
+joblib==1.4.2
+matplotlib==3.7.5
+jupyterlab==4.3.6

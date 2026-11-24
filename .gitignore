@@ -1,0 +1,23 @@
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+
+# Local data, training outputs and weights
+/data/*/*/*
+!/data/*/*/.gitignore
+/weights/*
+!/weights/.gitignore
+*.ckpt
+logs/
+dump/
+lightning_logs/
+*.log
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
