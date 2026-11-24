@@ -163,7 +163,7 @@ AUC, runtime, and memory are shown as **Original / Routing**.
   </tbody>
 </table>
 
-We recommend integrating **Transport Path Routing** into your own semi-dense matcher to reduce the cost of coarse matching during training and inference. Across the four matchers above, routing improved end-to-end inference speed by **1.31× to 2.01×**.
+We recommend adding **Transport Path Routing** to your matcher for more efficient training and inference.
 
 
 ## Acknowledgements
