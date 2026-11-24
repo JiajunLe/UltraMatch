@@ -36,7 +36,7 @@
 
 <a id="overview"></a>
 
-
+-----
 
 <p align="center">
   <img src="assets/intro.jpg" alt="Resolution scalability of UltraMatch." width="49%">
