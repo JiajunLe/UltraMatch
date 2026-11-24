@@ -123,16 +123,11 @@ bash scripts/reproduce_test/outdoor.sh --route_topk 4
 ```
 
 ## Training
-
-Prepare the MegaDepth images, depth maps and scene indices. The training configuration reads the dataset from `data/megadepth/train/`, the validation images and depth maps from `data/megadepth/test/`, and the scene indices from `data/megadepth/index/`. [LoFTR data preparation](https://github.com/zju3dv/LoFTR/blob/master/docs/TRAINING.md).
+Train UltraMatch on MegaDepth.
 
 ```bash
 bash scripts/reproduce_train/outdoor.sh
 ```
-
-The default run uses four GPUs, a batch size of eight per GPU, and 30 epochs. The script saves checkpoints in `logs/tb_logs/ultramatch/version_*/checkpoints/`.
-
-To resume training, set `RESUME_CKPT_PATH` to a file in the run's `checkpoints/recovery/` directory.
 
 ## Acknowledgements
 
