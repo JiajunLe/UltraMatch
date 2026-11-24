@@ -46,23 +46,29 @@
 
 **[2026-09-29]** The UltraMatch paper has been submitted to arXiv.
 
-## Overview
+<a id="overview"></a>
 
-**UltraMatch is an efficient, scalable semi-dense image matcher that routes computation to a small set of promising matching paths.** Instead of constructing a full token-to-token matching matrix, a lightweight **Transport Path Router** ranks candidate target blocks for each source block and retains only a small subset. Matching then runs over the selected paths. The routing strategy can be readily **integrated into other semi-dense matchers**.
+## Accuracy and efficiency
+
+<p align="center">
+  <img src="assets/intro.jpg" alt="Resolution scalability of UltraMatch." width="49%">
+  <img src="assets/efficiency.png" alt="Latency versus peak GPU memory on MegaDepth-1500; bubble size indicates relative pose AUC at 5 degrees." width="46%">
+</p>
+
+<p align="center">
+  <em>UltraMatch is an efficient, scalable semi-dense image matcher that routes computation to a small set of promising matching paths. Instead of constructing a full token-to-token matching matrix, a lightweight Transport Path Router ranks candidate target blocks for each source block and retains only a small subset. Matching then runs over the selected paths. The routing strategy can be readily integrated into other semi-dense matchers.</em>
+</p>
+
+<details>
+<summary><strong>Model architecture</strong></summary>
 
 <p align="center">
   <img src="assets/overview.jpg" alt="UltraMatch architecture: reparameterized feature extraction, feature interaction, Transport Path Routing, sparse global Dual-Softmax, and a tiny fine matching head." width="100%">
 </p>
 
+</details>
+
 ## Results
-
-### Accuracy and efficiency
-
-<p>
-  <img align="left" src="assets/intro.jpg" alt="Resolution scalability of UltraMatch." width="49%">
-  <img align="right" src="assets/efficiency.png" alt="Latency versus peak GPU memory on MegaDepth-1500; bubble size indicates relative pose AUC at 5 degrees." width="46%">
-</p>
-<br clear="all">
 
 ### High-resolution scalability
 
