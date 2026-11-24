@@ -107,6 +107,11 @@ python -m pip install -r requirements.txt
 
 Download [outdoor.ckpt](https://github.com/JiajunLe/UltraMatch/releases/download/v1.0.0/outdoor.ckpt) to `weights/outdoor.ckpt`. Run the [demo notebook](demo_single_pair.ipynb) to visualize matches on the ScanNet and PhotoTourism examples.
 
+## Data preparation
+
+- **Evaluation.** Download the [MegaDepth-1500 and ScanNet-1500 test sets](https://drive.google.com/drive/folders/1DOcOPZb3-5cWxLqn256AhwUVjBPifhuf). Place or symlink `Undistorted_SfM/` under `data/megadepth/test/` and the ScanNet `scene*` folders under `data/scannet/test/`.
+- **Training.** Follow the [LoFTR data guide](https://github.com/zju3dv/LoFTR/blob/master/docs/TRAINING.md#dataset-setup). Link the full MegaDepth images (`Undistorted_SfM/`) and depth maps (`phoenix/`) under both `data/megadepth/train/` and `data/megadepth/test/` for training and validation. Place the extracted scene indices in `data/megadepth/index/`.
+
 ## Evaluation
 
 ```bash
