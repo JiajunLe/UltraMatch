@@ -111,16 +111,12 @@ Download [outdoor.ckpt](https://github.com/JiajunLe/UltraMatch/releases/download
 
 ## Evaluation
 
-Download the MegaDepth-1500 and ScanNet-1500 test subsets. Place or link their contents under `data/megadepth/test/` and `data/scannet/test/`, respectively. MegaDepth expects `Undistorted_SfM/` under its test directory. ScanNet expects the `scene*` directories under its test directory. The pair lists, poses for MegaDepth, and ScanNet intrinsics are in `assets/`. [LoFTR test data](https://drive.google.com/drive/folders/1DOcOPZb3-5cWxLqn256AhwUVjBPifhuf).
-
 ```bash
 bash scripts/reproduce_test/outdoor.sh   # MegaDepth-1500, 1152 × 1152
 bash scripts/reproduce_test/indoor.sh    # ScanNet-1500, 640 × 480
 ```
 
-Both scripts use GPU 0 by default and report pose AUC at 5°, 10°, and 20°. Use `GPU_ID` to select another GPU or `CKPT_PATH` to evaluate a different checkpoint. The default pose solver uses OpenCV. For the optional `test.py --ransac LO-RANSAC` solver, install PoseLib with `python -m pip install poselib==2.0.4`.
-
-The scripts use the settings in the model and data configuration files. To override a setting for one run, pass it to the script, for example `bash scripts/reproduce_test/outdoor.sh --route_topk 4`. The default BF16 feature extraction falls back to FP32 on GPUs without BF16 support.
+The scripts use the settings in the model and data configuration files. To override a setting for one run, pass it to the script, for example `bash scripts/reproduce_test/outdoor.sh --route_topk 4`. .
 
 ## Training
 
