@@ -116,7 +116,11 @@ bash scripts/reproduce_test/outdoor.sh   # MegaDepth-1500, 1152 × 1152
 bash scripts/reproduce_test/indoor.sh    # ScanNet-1500, 640 × 480
 ```
 
-The scripts use the settings in the model and data configuration files. To override a setting for one run, pass it to the script, for example `bash scripts/reproduce_test/outdoor.sh --route_topk 4`. .
+The scripts use the settings in the model and data configuration files. To override a setting for one run, pass it to the script. For example, to keep four target blocks per source block on MegaDepth-1500, run:
+
+```bash
+bash scripts/reproduce_test/outdoor.sh --route_topk 4
+```
 
 ## Training
 
