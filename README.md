@@ -44,6 +44,8 @@
 
 ## News
 
+**[2026-11-24]** The UltraMatch code and [pretrained weights](https://github.com/JiajunLe/UltraMatch/releases/tag/v1.0.0) are now publicly available.
+
 **[2026-09-29]** The UltraMatch paper has been submitted to arXiv.
 
 ## Overview
@@ -105,9 +107,7 @@ python -m pip install -r requirements.txt
 
 ## Single-pair demo
 
-Download [outdoor.ckpt](https://github.com/JiajunLe/UltraMatch/releases/download/v1.0.0/outdoor.ckpt) and save it as `weights/outdoor.ckpt`. The same MegaDepth-trained weights are used for indoor and outdoor images. The notebook runs inference on the included ScanNet and PhotoTourism examples and draws the matched points. [Open the demo](demo_single_pair.ipynb).
-
-Import the Python model with `from src.ultramatch import UltraMatch`. The indoor and outdoor model settings live in `configs/ultramatch/` under `cfg.ULTRAMATCH`. New checkpoints use the parameter prefix `ultramatch.`. The loader also accepts earlier checkpoints with the `matcher.` prefix.
+Download [outdoor.ckpt](https://github.com/JiajunLe/UltraMatch/releases/download/v1.0.0/outdoor.ckpt) to `weights/outdoor.ckpt`. Run the [demo notebook](demo_single_pair.ipynb) to visualize matches on the ScanNet and PhotoTourism examples.
 
 ## Evaluation
 
